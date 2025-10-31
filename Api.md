@@ -1,5 +1,9 @@
-```http
-# Connect Wallet
+# FluidX402 API Reference
+
+All API endpoints assume your requests are authenticated via a Base-compatible wallet signature. Responses are JSON.
+
+```json
+// Connect Wallet
 POST /api/wallet/connect
 Body:
 {
@@ -13,7 +17,7 @@ Response:
   "wallet": "0xYourWalletAddress"
 }
 
-# Query Active Events
+// Query Active Events
 GET /api/events/active
 Response:
 {
@@ -35,7 +39,7 @@ Response:
   ]
 }
 
-# Query User Bets
+// Query User Bets
 GET /api/bets/user?walletAddress=0xYourWalletAddress
 Response:
 {
@@ -50,7 +54,7 @@ Response:
   ]
 }
 
-# Place Bet
+// Place Bet
 POST /api/bets/place
 Body:
 {
@@ -66,7 +70,7 @@ Response:
   "message": "Bet placed successfully"
 }
 
-# Claim Rewards
+// Claim Rewards
 POST /api/rewards/claim
 Body:
 {
@@ -81,7 +85,7 @@ Response:
   "message": "Rewards claimed successfully"
 }
 
-# Query Event Results
+// Query Event Results
 GET /api/events/results?eventId=evt123
 Response:
 {
