@@ -1,3 +1,4 @@
+
 Introduction
 
 FluidX402 is a web-native prediction platform built on Base (or your chosen chain). It implements the X402 payment protocol, allowing seamless, on-chain stablecoin transactions for event participation.
